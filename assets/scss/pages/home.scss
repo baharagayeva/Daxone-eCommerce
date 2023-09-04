@@ -1,31 +1,37 @@
 .container {
-    @include custom-container($padding-x: 24px);
-
-
+    @include custom-container();
 }
+
 //banner styles
 .banner-section {
     padding: 100px 0;
-    font-family: 'Poppins', sans-serif;
-    
-    @media (max-width:767px){
+
+    @media (max-width:767px) {
         padding: 50px 0;
     }
 
     .banner-area {
         background-image: url('/assets/images/banner/banner-bg-1.jpg');
+        background-position: center center;
+        background-size: cover;
         padding: 100px 0;
 
-        @media (max-width:767px){
+        @media (max-width:992px) and (min-width:768px) {
+            padding: 72px 0;
+            background-position: 40%;
+        }
+
+        @media (max-width:767px) {
             padding: 50px 0;
-            background-position: 17%;
+            background-position: 14%;
         }
 
         .banner-content {
             text-align: end;
+            font-family: "Poppins", sans-serif !important;
 
             h2 {
-                color: $banner-color ;
+                color: #7C5E48;
                 font-size: 48px;
                 letter-spacing: 2px;
 
@@ -34,32 +40,160 @@
                 }
 
                 @media (max-width:1199px) and (min-width:768px) {
-                        font-size: 40px;
-                        line-height: 45px;
+                    font-size: 40px;
+                    line-height: 45px;
                 }
 
                 @media (max-width:767px) {
-                        font-size: 20px;
-                        line-height: 25px;
+                    font-size: 20px;
+                    line-height: 25px;
                 }
             }
 
             a {
-                border-bottom: 1px solid $banner-color;
+                border-bottom: 1px solid #7C5E48;
                 padding-bottom: 2px;
-                color: $banner-color;
+                color: #7C5E48;
                 font-size: 14px;
                 font-weight: 300 !important;
 
                 &:hover {
-                    color: $a-hover-color;
-                    border-bottom: 1px solid $a-hover-color;
+                    color: #FF5151;
+                    border-bottom: 1px solid #FF5151;
                 }
             }
         }
     }
 }
 
-//best sell styles
+//product styles
+.product-section {
+    padding-bottom: 135px;
 
+    .product-area {
+        .product-content {
+            text-align: center;
+            margin-bottom: 40px;
 
+            h2 {
+                font-size: 36px;
+                color: #373737;
+                margin-bottom: 21px;
+                font-weight: bold;
+            }
+
+            p {
+                color: #737373;
+                font-size: 14px;
+                margin: 0 340px;
+            }
+        }
+
+        .product-boxs {
+            .product-box {
+                .product-img {
+                    img {
+                        margin-bottom: 15px;
+                    }
+
+                    .product-icons {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        z-index: 2;
+                        left: 8%;
+                        bottom: 15%;
+
+                        .product-icon {
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #FFFFFF;
+                            border-radius: 50%;
+                            border: 1px solid #e0e0e0;
+
+                            i {
+                                color: #737373;
+                                font-size: 22px;
+
+                            }
+
+                            &:hover {
+                                background-color: #FF5151;
+                                border: none;
+
+                                i {
+                                    color: #FFFFFF;
+                                }
+                            }
+                        }
+                    }
+
+                    .badge {
+                        z-index: 2;
+                        color: #FFFFFF;
+                        background-color: #FF5151;
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 14px;
+                        font-weight: 200;
+                        top: 4%;
+                        right: 4%;
+                    }
+
+                    .badge.fs-12 {
+                        font-size: 12px;
+                    }
+
+                    .badge.left {
+                        left: 4%;
+                    }
+                }
+
+                .product-con {
+                    p {
+                        color: #737373;
+                        font-size: 14px;
+                    }
+
+                    a {
+                        color: #373737;
+
+                        &:hover {
+                            color: #FF5151;
+                        }
+                    }
+
+                    .product-cost {
+                        color: #373737;
+                        font-weight: bold;
+                        font-size: 16px;
+                    }
+
+                    .old-cost {
+                        color: #737373;
+                        font-size: 14px;
+                        text-decoration: line-through;
+                        margin-left: 9px;
+                    }
+
+                    .product-addtocart {
+                        a {
+                            color: #FF5151 !important;
+
+                            &:hover {
+                                color: #373737 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
