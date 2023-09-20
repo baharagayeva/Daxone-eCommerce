@@ -1,19 +1,23 @@
+
 //abstracts
-@import "abstracts/mixins.scss";
-@import "abstracts/color.scss";
+@use "abstracts/mixins.scss";
+@use "abstracts/color.scss" ;
 
 //base
-@import "base/reset.scss";
-
-//layout
-@import "layout/header.scss";
-@import "layout/footer.scss";
+@use "base/reset.scss";
 
 
 //pages
+
 @import "pages/home.scss";
 @import "pages/shop.scss";
 @import "pages/contact.scss";
+
+
+//layout
+@use "layout/header.scss";
+@use "layout/footer.scss";
+
 
 //bootstrap
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
