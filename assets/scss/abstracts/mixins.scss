@@ -1,4 +1,4 @@
-@mixin custom-container($padding-x: $container-padding-x) {
+@mixin custom-container($padding-x: 24px) {
     width: 100%;
     padding-right: $padding-x;
     padding-left: $padding-x;

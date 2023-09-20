@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .main-body-overlay .body-overlay {
   transition: 0.6s;
 }
@@ -320,11 +321,16 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
 .banner-section {
   padding: 100px 0;
   font-family: "Poppins", sans-serif;
+=======
+.banner-section {
+  padding: 100px 0;
+>>>>>>> development
 }
 @media (max-width: 767px) {
   .banner-section {
     padding: 50px 0;
   }
+<<<<<<< HEAD
   .banner-section nav {
     padding: 25px;
   }
@@ -337,19 +343,45 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
   .banner-section .banner-area {
     padding: 50px 0;
     background-position: 17%;
+=======
+}
+.banner-section .banner-area {
+  background-image: url("/assets/images/banner/banner-bg-1.jpg");
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+  .banner-section .banner-area {
+    padding: 72px 0;
+    background-position: 40%;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section .banner-area {
+    padding: 50px 0;
+    background-position: 14%;
+>>>>>>> development
   }
 }
 .banner-section .banner-area .banner-content {
   text-align: end;
+<<<<<<< HEAD
 }
 .banner-section .banner-area .banner-content h2 {
   color: #7C5E48;
+=======
+  font-family: "Poppins", sans-serif !important;
+}
+.banner-section .banner-area .banner-content h2 {
+>>>>>>> development
   font-size: 48px;
   letter-spacing: 2px;
 }
 .banner-section .banner-area .banner-content h2:nth-child(2) {
   margin-bottom: 20px;
 }
+<<<<<<< HEAD
 @media (max-width: 996px) and (min-width: 768px) {
   .banner-section .banner-area .banner-content h2 {
     line-height: 45px;
@@ -357,6 +389,12 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
   }
   .banner-section .banner-area .banner-content h2 nav {
     padding: 25px;
+=======
+@media (max-width: 1199px) and (min-width: 768px) {
+  .banner-section .banner-area .banner-content h2 {
+    font-size: 40px;
+    line-height: 45px;
+>>>>>>> development
   }
 }
 @media (max-width: 767px) {
@@ -366,6 +404,7 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
   }
 }
 .banner-section .banner-area .banner-content a {
+<<<<<<< HEAD
   border-bottom: 1px solid #7C5E48;
   padding-bottom: 2px;
   color: #7C5E48;
@@ -375,4 +414,73 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
 .banner-section .banner-area .banner-content a:hover {
   color: red;
   border-bottom: 1px solid red;
+=======
+  padding-bottom: 2px;
+  font-size: 14px;
+  font-weight: 300 !important;
+}
+
+.product-section {
+  padding-bottom: 135px;
+}
+.product-section .product-area .product-content {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.product-section .product-area .product-content h2 {
+  font-size: 36px;
+  margin-bottom: 21px;
+  font-weight: bold;
+}
+.product-section .product-area .product-content p {
+  font-size: 14px;
+  margin: 0 340px;
+}
+.product-section .product-area .product-boxs .product-box .product-img img {
+  margin-bottom: 15px;
+}
+.product-section .product-area .product-boxs .product-box .product-img .product-icons {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  left: 5%;
+  bottom: 5%;
+}
+.product-section .product-area .product-boxs .product-box .product-img .product-icons a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.product-section .product-area .product-boxs .product-box .product-img .badge {
+  z-index: 2;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 200;
+  top: 4%;
+  right: 4%;
+}
+.product-section .product-area .product-boxs .product-box .product-img .badge.fs-12 {
+  font-size: 12px;
+}
+.product-section .product-area .product-boxs .product-box .product-img .badge.left {
+  left: 4%;
+}
+.product-section .product-area .product-boxs .product-box .product-con p {
+  font-size: 14px;
+}
+.product-section .product-area .product-boxs .product-box .product-con .product-cost {
+  font-weight: bold;
+  font-size: 16px;
+}
+.product-section .product-area .product-boxs .product-box .product-con .old-cost {
+  font-size: 14px;
+  text-decoration: line-through;
+  margin-left: 9px;
+>>>>>>> development
 }/*# sourceMappingURL=home.css.map */
