@@ -1,25 +1,25 @@
-.shop-bg-section {
+.bg-section {
   background-image: url(/assets/images/bg/breadcrumb.jpg);
   padding: 110px 0 117px;
   background-position: 50% 90%;
 }
-.shop-bg-section h2 {
+.bg-section h2 {
   font-size: 34px;
   margin-bottom: 10px;
   color: #373737;
   font-weight: bold;
 }
-.shop-bg-section p {
+.bg-section p {
   font-size: 15px;
   color: #373737;
 }
-.shop-bg-section p a {
+.bg-section p a {
   color: #373737;
 }
-.shop-bg-section p a:hover {
+.bg-section p a:hover {
   color: #FF5151;
 }
-.shop-bg-section p .active {
+.bg-section p .active {
   color: #FF5151;
 }
 
