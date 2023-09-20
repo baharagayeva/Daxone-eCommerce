@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .main-body-overlay .body-overlay {
   transition: 0.6s;
 }
@@ -321,29 +320,14 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
 .banner-section {
   padding: 100px 0;
   font-family: "Poppins", sans-serif;
-=======
-.banner-section {
-  padding: 100px 0;
->>>>>>> development
 }
 @media (max-width: 767px) {
   .banner-section {
     padding: 50px 0;
   }
-<<<<<<< HEAD
   .banner-section nav {
     padding: 25px;
   }
-}
-.banner-section .banner-area {
-  background-image: url("/assets/images/banner/banner-bg-1.jpg");
-  padding: 100px 0;
-}
-@media (max-width: 767px) {
-  .banner-section .banner-area {
-    padding: 50px 0;
-    background-position: 17%;
-=======
 }
 .banner-section .banner-area {
   background-image: url("/assets/images/banner/banner-bg-1.jpg");
@@ -361,27 +345,20 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
   .banner-section .banner-area {
     padding: 50px 0;
     background-position: 14%;
->>>>>>> development
   }
 }
 .banner-section .banner-area .banner-content {
   text-align: end;
-<<<<<<< HEAD
-}
-.banner-section .banner-area .banner-content h2 {
-  color: #7C5E48;
-=======
   font-family: "Poppins", sans-serif !important;
 }
 .banner-section .banner-area .banner-content h2 {
->>>>>>> development
+  color: #7C5E48;
   font-size: 48px;
   letter-spacing: 2px;
 }
 .banner-section .banner-area .banner-content h2:nth-child(2) {
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
 @media (max-width: 996px) and (min-width: 768px) {
   .banner-section .banner-area .banner-content h2 {
     line-height: 45px;
@@ -389,71 +366,117 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
   }
   .banner-section .banner-area .banner-content h2 nav {
     padding: 25px;
-=======
-@media (max-width: 1199px) and (min-width: 768px) {
+  }
+}
+@media (max-width: 996px) and (min-width: 768px) and (max-width: 1199px) and (min-width: 768px) {
   .banner-section .banner-area .banner-content h2 {
     font-size: 40px;
     line-height: 45px;
->>>>>>> development
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 996px) and (min-width: 768px) and (max-width: 767px) {
   .banner-section .banner-area .banner-content h2 {
     font-size: 20px;
     line-height: 25px;
   }
 }
-.banner-section .banner-area .banner-content a {
-<<<<<<< HEAD
+.banner-section .banner-area .banner-content h2 a {
   border-bottom: 1px solid #7C5E48;
   padding-bottom: 2px;
   color: #7C5E48;
   font-size: 14px;
   font-weight: 300 !important;
 }
-.banner-section .banner-area .banner-content a:hover {
+.banner-section .banner-area .banner-content h2 a:hover {
   color: red;
   border-bottom: 1px solid red;
-=======
-  padding-bottom: 2px;
-  font-size: 14px;
-  font-weight: 300 !important;
 }
-
-.product-section {
+.banner-section .product-section {
   padding-bottom: 135px;
 }
-.product-section .product-area .product-content {
+.banner-section .product-section .product-area .product-content {
   text-align: center;
   margin-bottom: 40px;
 }
-.product-section .product-area .product-content h2 {
+.banner-section .product-section .product-area .product-content h2 {
   font-size: 36px;
+  color: #373737;
   margin-bottom: 21px;
   font-weight: bold;
 }
-.product-section .product-area .product-content p {
+.banner-section .product-section .product-area .product-content p {
+  color: #737373;
   font-size: 14px;
-  margin: 0 340px;
+  line-height: 26px;
+  margin: 0 auto;
 }
-.product-section .product-area .product-boxs .product-box .product-img img {
+.banner-section .product-section .product-area .product-boxs .product-box {
+  position: relative;
+}
+.banner-section .product-section .product-area .product-boxs .product-box:hover .product-icons {
+  opacity: 1;
+}
+.banner-section .product-section .product-area .product-boxs .product-box:hover .product-icons .product-icon:nth-child(1) {
+  transition-delay: 0.1s;
+  opacity: 1;
+  transform: translateX(0);
+}
+.banner-section .product-section .product-area .product-boxs .product-box:hover .product-icons .product-icon:nth-child(2) {
+  transition-delay: 0.2s;
+  opacity: 1;
+  transform: translateX(0);
+}
+.banner-section .product-section .product-area .product-boxs .product-box:hover .product-icons .product-icon:nth-child(3) {
+  transition-delay: 0.3s;
+  opacity: 1;
+  transform: translateX(0);
+}
+.banner-section .product-section .product-area .product-boxs .product-box:hover .product-addtocart {
+  opacity: 1;
+  left: 55%;
+}
+.banner-section .product-section .product-area .product-boxs .product-box .product-img img {
   margin-bottom: 15px;
 }
-.product-section .product-area .product-boxs .product-box .product-img .product-icons {
+.banner-section .product-section .product-area .product-boxs .product-box .product-img img:hover {
+  cursor: pointer;
+}
+.banner-section .product-section .product-area .product-boxs .product-box .product-img .product-icons {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   z-index: 2;
-  left: 5%;
-  bottom: 5%;
+  left: 8%;
+  bottom: 15%;
 }
-.product-section .product-area .product-boxs .product-box .product-img .product-icons a {
+.banner-section .product-section .product-area .product-boxs .product-box .product-img .product-icons .product-icon {
   width: 40px;
   height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid #e0e0e0;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.3s, transform 0.3s;
 }
-.product-section .product-area .product-boxs .product-box .product-img .badge {
+.banner-section .product-section .product-area .product-boxs .product-box .product-img .product-icons .product-icon i {
+  color: #737373;
+  font-size: 22px;
+}
+.banner-section .product-section .product-area .product-boxs .product-box .product-img .product-icons .product-icon:hover {
+  background-color: #FF5151;
+  border: none;
+}
+.banner-section .product-section .product-area .product-boxs .product-box .product-img .product-icons .product-icon:hover i {
+  color: #FFFFFF;
+}
+.banner-section .product-section .product-area .product-boxs .product-box .product-img .badge {
   z-index: 2;
+  color: #FFFFFF;
+  background-color: #FF5151;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -465,22 +488,115 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
   top: 4%;
   right: 4%;
 }
-.product-section .product-area .product-boxs .product-box .product-img .badge.fs-12 {
+.banner-section .product-section .product-area .product-boxs .product-box .product-img .badge.fs-12 {
   font-size: 12px;
 }
-.product-section .product-area .product-boxs .product-box .product-img .badge.left {
+.banner-section .product-section .product-area .product-boxs .product-box .product-img .badge.left {
   left: 4%;
 }
-.product-section .product-area .product-boxs .product-box .product-con p {
+.banner-section .product-section .product-area .product-boxs .product-box .product-con p {
+  color: #737373;
   font-size: 14px;
 }
-.product-section .product-area .product-boxs .product-box .product-con .product-cost {
+.banner-section .product-section .product-area .product-boxs .product-box .product-con a {
+  color: #373737;
+}
+.banner-section .product-section .product-area .product-boxs .product-box .product-con a:hover {
+  color: #FF5151;
+}
+.banner-section .product-section .product-area .product-boxs .product-box .product-con .product-cost {
+  color: #373737;
   font-weight: bold;
   font-size: 16px;
 }
-.product-section .product-area .product-boxs .product-box .product-con .old-cost {
+.banner-section .product-section .product-area .product-boxs .product-box .product-con .old-cost {
+  color: #737373;
   font-size: 14px;
   text-decoration: line-through;
   margin-left: 9px;
->>>>>>> development
+  font-weight: lighter;
+}
+.banner-section .product-section .product-area .product-boxs .product-box .product-addtocart {
+  position: absolute;
+  transition: opacity 0.3s, right 0.3s;
+  right: 3%;
+  bottom: 1%;
+  opacity: 0;
+}
+.banner-section .product-section .product-area .product-boxs .product-box .product-addtocart a {
+  color: #FF5151 !important;
+  font-size: 14px;
+}
+.banner-section .product-section .product-area .product-boxs .product-box .product-addtocart a:hover {
+  color: #373737 !important;
+}
+.banner-section .product-section .product-area .product-boxs .product-box.all {
+  margin-bottom: 35px;
+}
+.banner-section .discount-section .discount-area {
+  padding-bottom: 100px;
+}
+.banner-section .discount-section .discount-area .discount-img {
+  position: relative;
+  margin-left: 70px;
+}
+.banner-section .discount-section .discount-area .discount-img::before {
+  background-color: #fff6f6;
+  content: "";
+  height: calc(100% - 30px);
+  left: -70px;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  z-index: -1;
+}
+@media (max-width: 767px) {
+  .banner-section .discount-section .discount-area .discount-img::before {
+    left: -30px;
+  }
+}
+.banner-section .discount-section .discount-area .discount-content {
+  margin-left: 30px;
+}
+@media (max-width: 991px) {
+  .banner-section .discount-section .discount-area .discount-content {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .banner-section .discount-section .discount-area .discount-content {
+    margin-top: 30px;
+  }
+}
+.banner-section .discount-section .discount-area .discount-content p {
+  color: #737373;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.banner-section .discount-section .discount-area .discount-content h2 {
+  font-size: 36px;
+  color: #383838;
+  margin: 21px 0 34px;
+  font-weight: bold;
+  line-height: 46px;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 991px) {
+  .banner-section .discount-section .discount-area .discount-content h2 {
+    font-size: 30px;
+    margin: 15px 0 20px;
+    line-height: 40px;
+  }
+}
+.banner-section .discount-section .discount-area .discount-content .discount-p {
+  color: #373737;
+  margin-bottom: 8px;
+}
+.banner-section .discount-section .discount-area .discount-content .discount-btn button {
+  border: 1px solid #FF5151;
+  background-color: transparent;
+  padding: 14px 30px;
+  font-size: 14px;
+  color: #FF5151;
+  font-weight: bold;
 }/*# sourceMappingURL=home.css.map */
