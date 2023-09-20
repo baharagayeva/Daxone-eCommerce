@@ -1,32 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("/assets/fonts/Roboto");
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("/assets/fonts/Poppins");
-}
-ol, ul, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-p, h2 {
-  margin: 0;
-}
-
 .main-body-overlay .body-overlay {
   transition: 0.6s;
 }
@@ -404,4 +375,4 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
 .banner-section .banner-area .banner-content a:hover {
   color: red;
   border-bottom: 1px solid red;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=home.css.map */

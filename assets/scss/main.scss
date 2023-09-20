@@ -1,16 +1,20 @@
+
 //abstracts
-@import "abstracts/mixins.scss";
-@import "abstracts/color.scss";
+@use "abstracts/mixins.scss";
+@use "abstracts/color.scss" ;
 
 //base
-@import "base/reset.scss";
-
-//layout
-@import "layout/header.scss";
-@import "layout/footer.scss";
+@use "base/reset.scss";
 
 //pages
-@import "pages/home.scss";
+@use "pages/home.scss";
+
+//layout
+@use "layout/header.scss";
+@use "layout/footer.scss";
+
+
+
 
 // @import "/bootstrap-5.3.1-dist/";
 // @import "../../node_modules/bootstrap/scss/bootstrap.scss"
