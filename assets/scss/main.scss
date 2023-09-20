@@ -8,15 +8,19 @@
 
 
 //pages
+@use "pages/home.scss";
 
-@import "pages/home.scss";
+//layout
+@import "layout/header.scss";
+@import "layout/footer.scss";
+
+
+
+//pages
+
 @import "pages/shop.scss";
 @import "pages/contact.scss";
 
-
-//layout
-@use "layout/header.scss";
-@use "layout/footer.scss";
 
 
 //bootstrap
