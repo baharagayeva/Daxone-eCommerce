@@ -22,6 +22,7 @@ var slider = document.getElementById("slider");
         thumb2.addEventListener("mousedown", startDrag);
     
         function startDrag(event) {
+          event.preventDefault();
           var thumb = event.target;
           var startX = event.clientX;
     

@@ -10,11 +10,14 @@
 @import "layout/_footer.scss";
 
 //pages
+
 @import "pages/_home.scss";
 @import "pages/_shop.scss";
 @import "pages/_contact.scss";
 @import "pages/_wishlist.scss";
 @import "pages/_login.scss";
+@import "pages/checkout.scss";
+
 
 //bootstrap
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");

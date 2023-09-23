@@ -44,6 +44,7 @@ header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item {
 header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item:hover .home-dropdown {
   transition: 0.2s;
   opacity: 1;
+  height: -moz-max-content;
   height: max-content;
 }
 header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item:hover {
@@ -58,6 +59,7 @@ header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item .home-d
   opacity: 0;
   background-color: white;
   position: absolute;
+  width: -moz-max-content;
   width: max-content;
   padding: 20px;
   box-shadow: 0 0 20px 0.4px rgba(0, 0, 0, 0.1);
@@ -562,6 +564,7 @@ header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item {
 header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item:hover .home-dropdown {
   transition: 0.2s;
   opacity: 1;
+  height: -moz-max-content;
   height: max-content;
 }
 header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item:hover {
@@ -576,6 +579,7 @@ header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item .home-d
   opacity: 0;
   background-color: white;
   position: absolute;
+  width: -moz-max-content;
   width: max-content;
   padding: 20px;
   box-shadow: 0 0 20px 0.4px rgba(0, 0, 0, 0.1);
@@ -1418,7 +1422,6 @@ header nav .inner-container .nav-menu .nav-basket .burger-menu .burger-menu-list
   font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 .shop-main-section .shop-sidebar .sidebar-wrapper.checkbox .shop-checkbox .checkbox-container a {
@@ -1494,8 +1497,6 @@ header nav .inner-container .nav-menu .nav-basket .burger-menu .burger-menu-list
   height: 10px;
   border: solid white;
   border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .shop-main-section .shop-sidebar .sidebar-wrapper.checkbox .shop-checkbox .checkmark {
@@ -1785,4 +1786,141 @@ header nav .inner-container .nav-menu .nav-basket .burger-menu .burger-menu-list
 }
 .login-register-area .login-register-wrapper .login-register-form-container.active {
   display: block;
+}
+
+.checkout-page .checkout-accordion1 {
+  overflow: hidden;
+}
+.checkout-page .checkout-accordion-body {
+  max-height: 0;
+  transition: 2s;
+}
+.checkout-page i {
+  color: rgb(5, 189, 5);
+}
+.checkout-page p {
+  font-size: 14px;
+}
+.checkout-page p span {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.checkout-page p span:hover {
+  color: #FF6541;
+}
+.checkout-page h5 {
+  font-size: 16px;
+}
+.checkout-page .checkout-login button {
+  background-color: #EEEFF2;
+  border: none;
+  border-radius: 0;
+  color: black;
+  padding: 10px 25px;
+  transition: 0.3s;
+}
+.checkout-page .checkout-login button:hover {
+  background-color: #FF6541;
+  color: white;
+}
+.checkout-page .checkout-accordion1-title {
+  background-color: #EEEFF2;
+  padding: 20px;
+}
+.checkout-page .checkout-social-buttons div {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #EEEFF2;
+  padding: 20px 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.checkout-page .checkout-social-buttons div:hover {
+  background-color: #FF6541;
+  color: white;
+}
+.checkout-page .checkout-accordion-coupon input {
+  border-radius: 0;
+  padding: 10px;
+}
+.checkout-page .checkout-accordion-coupon button {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 0;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.checkout-page .checkout-accordion-coupon button:hover {
+  background-color: #FF6541;
+  color: white;
+}
+
+.accordionNotActive {
+  max-height: 1000px !important;
+}
+
+.checkout-form .checkout-form-line {
+  background-color: #FF6541;
+  width: 70px;
+  height: 2px;
+  border: #FF6541;
+}
+.checkout-form .checkout-form-input input {
+  padding: 10px;
+  border: 1px solid #e8e8e8;
+}
+.checkout-form .checkout-form-input input:focus {
+  border-color: red;
+}
+.checkout-form .checkout-form-input select {
+  padding: 10px;
+  border: 1px solid #e8e8e8;
+}
+.checkout-form .checkout-form-input #textarea {
+  border: none;
+  background-color: #E8EFF7;
+}
+.checkout-form .order-checkout {
+  border: 1px solid black;
+  padding: 40px;
+}
+.checkout-form .order-checkout .order-line {
+  background-color: #FF6541;
+  width: 50px;
+  height: 2px;
+  border: #FF6541;
+}
+.checkout-form .order-checkout .product-total {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E8EFF7;
+  padding: 15px 0;
+}
+.checkout-form .order-checkout .product-name {
+  border-bottom: 1px solid #E8EFF7;
+  padding: 15px 0;
+}
+.checkout-form .order-checkout .product-name .product-price {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-form .order-checkout .checkout-radio p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.checkout-form .order-checkout button {
+  width: 100%;
+  background-color: #FF5151;
+  border-radius: 0;
+  padding: 15px 40px;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.checkout-form .order-checkout button:hover {
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
