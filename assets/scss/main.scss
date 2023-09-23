@@ -1,27 +1,20 @@
-
 //abstracts
-@use "abstracts/mixins.scss";
-@use "abstracts/color.scss" ;
+@import "abstracts/_mixins.scss";
+@import "abstracts/_color.scss";
 
 //base
-@use "base/reset.scss";
-
-
-//pages
-@use "pages/home.scss";
+@import "base/_reset.scss";
 
 //layout
-@import "layout/header.scss";
-@import "layout/footer.scss";
-
-
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
 
 //pages
-
-@import "pages/shop.scss";
-@import "pages/contact.scss";
-
-
+@import "pages/_home.scss";
+@import "pages/_shop.scss";
+@import "pages/_contact.scss";
+@import "pages/_wishlist.scss";
+@import "pages/_login.scss";
 
 //bootstrap
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");

@@ -17,10 +17,9 @@
             text-align: center;
             margin-bottom: 30px;
 
-            &:hover{ 
-                i{
-                    animation: icon-vibration 2s ease;
-                }
+            &:hover i {
+                animation-name: icon-vibration;
+                animation-timing-function: 2s;
             }
 
             i {
@@ -29,12 +28,29 @@
             }
 
             @keyframes icon-vibration{
-                0%{transform: rotate(1deg);}
-                20%{transform: rotate(-1deg);}
-                40%{transform: rotate(1deg);}
-                60%{transform: rotate(-1deg);}
-                80%{transform: rotate(1deg);}
-                100%{transform: rotate(-1deg);}
+                0% {
+                    transform: rotate(60deg);
+                }
+
+                20% {
+                    transform: rotate(-1deg);
+                }
+
+                40% {
+                    transform: rotate(1deg);
+                }
+
+                60% {
+                    transform: rotate(-1deg);
+                }
+
+                80% {
+                    transform: rotate(1deg);
+                }
+
+                100% {
+                    transform: rotate(-1deg);
+                }
             }
 
             h4 {
@@ -71,7 +87,7 @@
                     a {
                         color: #333;
 
-                        &:hover{
+                        &:hover {
                             color: #ff5151;
                         }
                     }
@@ -121,14 +137,14 @@
                 letter-spacing: 0.2px;
                 font-weight: 500;
 
-                &:hover{
+                &:hover {
                     background-color: #000;
                 }
             }
         }
     }
 
-    .google-map-wrap{
+    .google-map-wrap {
         padding-top: 90px;
     }
 }
