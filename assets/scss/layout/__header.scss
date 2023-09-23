@@ -48,7 +48,7 @@ header {
                                     line-height: 34px;
 
                                     &:hover {
-                                        color: #FF6541;
+                                        color: #FF6541 !important;
                                     }
                                 }
                             }
@@ -56,7 +56,7 @@ header {
 
                         a {
                             line-height: 110px;
-                            color: #373737;
+                            color: #373737 !important;
                             transition: .2s;
                         }
                     }
@@ -90,7 +90,7 @@ header {
                     transition: .6s;
                     right: -500px;
                     height: 100%;
-                    width: 270px;
+                    width: 250px;
 
                     // overflow-x: scroll;
                     // overflow-y: scroll;
@@ -189,6 +189,7 @@ header {
     width: 100%;
     height: 100%;
     background: rgba(35, 35, 36, 0.7) none repeat scroll 0 0;
+    z-index: 2222;
 }
 
 .accordionActive {

@@ -24,7 +24,7 @@
     background-image: url("/assets/images/hm1-bg-1.webp");
     background-size: cover;
     position: relative;
-    height: 500px;
+    height: 550px;
 
     .slider {
         padding-top: 20px;
@@ -89,7 +89,7 @@
                     font-size: 2vw;
                 }
 
-                button {
+                .shop-now-button {
                     color: #ff5151;
                     border: 1px solid #ff5151;
                     border-radius: 0;
@@ -98,6 +98,14 @@
                     animation-fill-mode: forwards;
                     animation-delay: 1.7s;
                     opacity: 0;
+
+                    background: linear-gradient(#ff5151 0 0) var(--p, 0)/var(--p, 0) no-repeat;
+                    transition: .4s, background-position 0s !important;
+
+                    &:hover {
+                        --p: 100% !important;
+                        color: #fff !important;
+                    }
                 }
             }
         }
@@ -141,7 +149,108 @@
     }
 }
 
-@media (max-width:573px) {
+
+@media (max-width:300px) {
+
+    .nav-basket {
+        i {
+            font-size: 12px !important;
+        }
+
+        #items-count {
+            font-size: 12px !important;
+        }
+    }
+
+    #slider-container {
+        height: 450px !important;
+
+        .slider-item {
+            .slider-image {
+                width: 100% !important;
+            }
+
+            .slider-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100% !important;
+                margin: 0 !important;
+
+                button {
+                    margin-top: 0 !important;
+                }
+
+                h1 {
+                    margin-top: 0 !important;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+
+@media (min-width:300px) and (max-width:490px) {
+
+    .nav-basket {
+        i {
+            font-size: 12px !important;
+        }
+
+        #items-count {
+            font-size: 12px !important;
+        }
+    }
+
+
+
+    #slider-container {
+        height: 600px !important;
+
+        .slider-item {
+            .slider-image {
+                width: 100% !important;
+            }
+
+            .slider-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100% !important;
+                margin: 0 !important;
+
+                button {
+                    margin-top: 0 !important;
+                }
+
+                h1 {
+                    margin-top: 0 !important;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:490px) and (max-width:573px) {
+
+    .nav-basket {
+        i {
+            font-size: 12px !important;
+        }
+
+        #items-count {
+            font-size: 12px !important;
+        }
+    }
+
+
+
     #slider-container {
         height: 700px !important;
 
@@ -227,221 +336,6 @@
             }
         }
     }
-}
-
-
-header {
-    nav {
-        background-color: #EEF6FF;
-
-        .inner-container {
-            .nav-logo {
-                cursor: pointer;
-                line-height: 110px;
-            }
-
-            .nav-menu {
-                .nav-menu-list {
-                    .nav-menu-list-item {
-                        font-size: 18px;
-                        position: relative;
-                        z-index: 15;
-                        overflow: hidden;
-
-                        &:hover .home-dropdown {
-                            transition: .2s;
-                            opacity: 1;
-                            height: max-content;
-                        }
-
-                        &:hover {
-                            overflow: visible;
-                        }
-
-                        &:hover a {
-                            color: #FF6541;
-                        }
-
-                        .home-dropdown {
-                            z-index: 100;
-                            height: 0;
-                            opacity: 0;
-                            background-color: white;
-                            position: absolute;
-                            width: max-content;
-                            padding: 20px;
-                            box-shadow: 0 0 20px 0.4px rgba(0, 0, 0, 0.1);
-
-                            @media (max-width:996px) and (min-width:768px) {
-                                nav {
-                                    padding: 25px;
-                                }
-
-                                line-height: 45px;
-                                padding: 25px;
-
-                                @media (max-width:1199px) and (min-width:768px) {
-                                    font-size: 40px;
-                                    line-height: 45px;
-                                }
-
-                                .home-dropdown-list-item {
-                                    transition: .3s;
-                                    cursor: pointer;
-
-                                    &:hover {
-                                        color: #FF6541;
-                                    }
-                                }
-                            }
-
-                            a {
-                                line-height: 110px;
-                                color: #373737;
-                                transition: .2s;
-                                // &:hover{
-                                //     color: #FF6541;
-                                // }
-                            }
-                        }
-                    }
-                }
-
-                .nav-basket {
-                    i {
-                        cursor: pointer;
-                        transition: .2s;
-
-                        &:hover {
-                            color: #FF6541;
-                        }
-                    }
-
-                    h5 {
-                        cursor: pointer;
-                        transition: .2s;
-
-                        &:hover {
-                            color: #FF6541;
-                        }
-                    }
-
-                    .burger-menu {
-                        position: fixed;
-                        top: 0;
-                        padding: 35px 30px;
-                        background-color: #fff;
-                        transition: .6s;
-                        right: -500px;
-                        height: 100%;
-                        width: 270px;
-
-                        // overflow-x: scroll;
-                        // overflow-y: scroll;
-                        .burger-menu-close {
-                            cursor: pointer;
-                            width: 30px;
-                            height: 30px;
-                            padding: 15px;
-                            position: absolute;
-                            top: 0;
-                            left: -30px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            background-color: black;
-
-                            i {
-                                color: white;
-                            }
-
-                        }
-
-                        .burger-menu-input {
-                            input {
-                                font-size: 14px;
-                                width: 100%;
-                                height: 50px;
-                                border: none;
-                                background-color: #f6f6f6;
-                                padding: 15px;
-                            }
-
-                            i {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                height: 50px;
-                                padding: 15px;
-                                border: none;
-                                background-color: #f6f6f6;
-                                border-left: 1px solid gray;
-                            }
-                        }
-
-                        .burger-menu-list-menu-container {
-                            .burger-menu-list-menu {
-                                a {
-                                    color: black;
-                                }
-
-                                .burger-menu-list-menu-item {
-                                    overflow: hidden;
-
-
-                                    .burger-dropdown {
-                                        transition: .4s;
-                                        font-size: 14px;
-                                        max-height: 0;
-                                    }
-                                }
-                            }
-
-                            i {
-                                font-size: 12px !important;
-                            }
-                        }
-
-                        .burger-menu-list-footer-container {
-                            .burger-menu-list-footer {
-                                a {
-                                    color: black;
-                                }
-
-                                i {
-                                    font-size: 12px;
-                                }
-                            }
-                        }
-
-                    }
-                }
-            }
-        }
-    }
-}
-
-.burgerActive {
-    right: 0 !important;
-    z-index: 33333;
-
-}
-
-.overlayActive {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(35, 35, 36, 0.7) none repeat scroll 0 0;
-}
-
-.accordionActive {
-    max-height: 200px !important;
-}
-
-.plusMinusActive {
-    display: none;
 }
 
 //banner styles
@@ -708,7 +602,7 @@ header {
             position: relative;
             margin-left: 70px;
 
-            @media (max-width:576px){
+            @media (max-width:576px) {
                 margin-left: 40px;
             }
 
@@ -774,6 +668,14 @@ header {
                     font-size: 14px;
                     color: #FF5151;
                     font-weight: bold;
+
+                    background: linear-gradient(#ff5151 0 0) var(--p, 0)/var(--p, 0) no-repeat;
+                    transition: .4s, background-position 0s;
+
+                    &:hover {
+                        --p: 100%;
+                        color: #fff;
+                    }
                 }
             }
         }

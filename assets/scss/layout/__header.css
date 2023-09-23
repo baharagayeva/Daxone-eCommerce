@@ -49,12 +49,12 @@ header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item .home-d
 }
 
 header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item .home-dropdown .home-dropdown-list-item a:hover {
-  color: #FF6541;
+  color: #FF6541 !important;
 }
 
 header nav .inner-container .nav-menu .nav-menu-list .nav-menu-list-item a {
   line-height: 110px;
-  color: #373737;
+  color: #373737 !important;
   transition: .2s;
 }
 
@@ -84,7 +84,7 @@ header nav .inner-container .nav-basket .burger-menu {
   transition: .6s;
   right: -500px;
   height: 100%;
-  width: 270px;
+  width: 250px;
 }
 
 header nav .inner-container .nav-basket .burger-menu .burger-menu-close {
@@ -163,6 +163,7 @@ header nav .inner-container .nav-basket .burger-menu .burger-menu-list-footer-co
   width: 100%;
   height: 100%;
   background: rgba(35, 35, 36, 0.7) none repeat scroll 0 0;
+  z-index: 2222;
 }
 
 .accordionActive {

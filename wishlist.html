@@ -85,7 +85,7 @@
                             <ul class="home-dropdown fs-6">
                                 <li class="home-dropdown-list-item py-1"><a href="#">About Us</a></li>
                                 <li class="home-dropdown-list-item py-1"><a href="#">Cart Page</a></li>
-                                <li class="home-dropdown-list-item py-1"><a href="#">Compare</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="checkout.html">Checkout</a></li>
                                 <li class="home-dropdown-list-item py-1"><a href="wishlist.html">Wishlist</a></li>
                                 <li class="home-dropdown-list-item py-1"><a href="#">My Account</a></li>
                                 <li class="home-dropdown-list-item py-1"><a href="contact.html">Contact Us</a></li>
@@ -104,9 +104,10 @@
                     </ul>
                 </div>
                 <div class="nav-basket d-flex align-items-center gap-xl-5 gap-3">
-                    <a class="sec-icons" href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
-                    <a class="sec-icons" href="login.html"><i class="fa-regular fa-user"></i></a>
-                    <a class="sec-icons" href="#" class="fs-4 d-none d-sm-none d-md-none d-lg-block"><span>$240</span><i
+                    <a class="sec-icons" href="wishlist.html"><i class="fa-regular fa-heart d-sm-block d-none"></i></a>
+                    <a class="sec-icons" href="login.html"><i class="fa-regular fa-user d-sm-block d-none"></i></a>
+                    <a class="sec-icons fs-4 d-none d-sm-none d-md-none d-lg-flex align-items-center gap-1"
+                        href="checkout.html"><span class="d-sm-block d-none">$240</span><i
                             class="fa-solid fa-cart-shopping"></i></a>
                     <i id="burger-menu-icon" class="fa-solid fa-burger d-block d-sm-block d-md-block d-lg-none fs-4"
                         style="color: #FF6541;;"></i>
@@ -247,101 +248,224 @@
         <!-- Main Cart Area -->
         <section class="main-cart-area">
             <div class="custom-container">
-                <h3>Your cart items</h3>
-                <div class="row">
-                    <div class="col-12">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>IMAGE</th>
-                                    <th>PRODUCT NAME</th>
-                                    <th>UNTIL PRICE</th>
-                                    <th>QTY</th>
-                                    <th>SUBTOTAL</th>
-                                    <th>ADD TO CART</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="table-img">
-                                        <a href="#"><img src="/assets/images/cart/cart-3.jpg"></a>
-                                    </td>
-                                    <td class="product-name">
-                                        <a href="#">Demo Product Name</a>
-                                    </td>
-                                    <td class="product-price">
-                                        <span>$260.00</span>
-                                    </td>
-                                    <td class="product-counter">
-                                        <div class="product-count d-flex">
-                                            <div class="count-down">-</div>
-                                            <div>
-                                                <input class="plus-minus-box" type="text" value="2">
+                <div class=" d-flex flex-column justify-content-center align-items-center">
+                    <h3 style="text-align: left;">Your cart items</h3>
+                    <div class="row">
+                        <div class="col-12 table-list">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>IMAGE</th>
+                                        <th>PRODUCT NAME</th>
+                                        <th>UNTIL PRICE</th>
+                                        <th>QTY</th>
+                                        <th>SUBTOTAL</th>
+                                        <th>ADD TO CART</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="table-img">
+                                            <a href="#"><img src="/assets/images/cart/cart-3.jpg"></a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a href="#">Demo Product Name</a>
+                                        </td>
+                                        <td class="product-price">
+                                            <span>$260.00</span>
+                                        </td>
+                                        <td class="product-counter">
+                                            <div class="product-count d-flex align-items-center">
+                                                <div class="count-down d-flex align-items-center justify-content-center">-</div>
+                                                <div>
+                                                    <input class="plus-minus-box" type="text" value="1" disabled>
+                                                </div>
+                                                <div class="count-up d-flex align-items-center justify-content-center">+</div>
                                             </div>
-                                            <div class="count-up">+</div>
-                                        </div>
-                                    </td>
-                                    <td class="product-price"><span>$110.00</span></td>
-                                    <td class="cart-button">
-                                        <button>ADD TO CART</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-img">
-                                        <a href="#"><img src="/assets/images/cart/cart-4.jpg"></a>
-                                    </td>
-                                    <td class="product-name">
-                                        <a href="#">Demo Product Name</a>
-                                    </td>
-                                    <td class="product-price">
-                                        <span>$260.00</span>
-                                    </td>
-                                    <td class="product-counter">
-                                        <div class="product-count d-flex">
-                                            <div class="count-down">-</div>
-                                            <div>
-                                                <input class="plus-minus-box" type="text" value="2">
+                                        </td>
+                                        <td class="product-price"><span>$110.00</span></td>
+                                        <td class="cart-button">
+                                            <button>ADD TO CART</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-img">
+                                            <a href="#"><img src="/assets/images/cart/cart-4.jpg"></a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a href="#">Demo Product Name</a>
+                                        </td>
+                                        <td class="product-price">
+                                            <span>$260.00</span>
+                                        </td>
+                                        <td class="product-counter">
+                                            <div class="product-count d-flex align-items-center">
+                                                <div class="count-down d-flex align-items-center justify-content-center">-</div>
+                                                <div>
+                                                    <input class="plus-minus-box" type="text" value="2" disabled>
+                                                </div>
+                                                <div class="count-up d-flex align-items-center justify-content-center">+</div>
                                             </div>
-                                            <div class="count-up">+</div>
-                                        </div>
-                                    </td>
-                                    <td class="product-price"><span>$110.00</span></td>
-                                    <td class="cart-button">
-                                        <button>ADD TO CART</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="table-img">
-                                        <a href="#"><img src="/assets/images/cart/cart-5.jpg"></a>
-                                    </td>
-                                    <td class="product-name">
-                                        <a href="#">Demo Product Name</a>
-                                    </td>
-                                    <td class="product-price">
-                                        <span>$260.00</span>
-                                    </td>
-                                    <td class="product-counter">
-                                        <div class="product-count d-flex">
-                                            <div class="count-down">-</div>
-                                            <div>
-                                                <input class="plus-minus-box" type="text" value="2">
+                                        </td>
+                                        <td class="product-price"><span>$110.00</span></td>
+                                        <td class="cart-button">
+                                            <button>ADD TO CART</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-img">
+                                            <a href="#"><img src="/assets/images/cart/cart-5.jpg"></a>
+                                        </td>
+                                        <td class="product-name">
+                                            <a href="#">Demo Product Name</a>
+                                        </td>
+                                        <td class="product-price">
+                                            <span>$260.00</span>
+                                        </td>
+                                        <td class="product-counter">
+                                            <div class="product-count d-flex align-items-center justify-content-center">
+                                                <div class="count-down d-flex align-items-center justify-content-center">-</div>
+                                                <div>
+                                                    <input class="plus-minus-box" type="text" value="2" disabled>
+                                                </div>
+                                                <div class="count-up d-flex align-items-center justify-content-center">+</div>
                                             </div>
-                                            <div class="count-up">+</div>
-                                        </div>
-                                    </td>
-                                    <td class="product-price"><span>$110.00</span></td>
-                                    <td class="cart-button">
-                                        <button>ADD TO CART</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                        </td>
+                                        <td class="product-price"><span>$110.00</span></td>
+                                        <td class="cart-button">
+                                            <button>ADD TO CART</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Main Cart Area End -->
     </div>
+    <!-- Footer-->
+    <footer class="footer-area">
+        <div class="footer-container ">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="footer-wrapper col-lg-4 col-md-8 col-12 mb-md-5 mb-sm-4 mb-4">
+                        <img src="/assets/images/logo/logo-1.png" />
+                        <p class="footer-about">On the other hand, we denounce with righteous
+                            indignation and dislike men who are so beguiled and demoralized by the charms
+                        <p>
+                    </div>
+                    <div class="footer-wrapper col-lg-2 col-md-4 col-6 mb-sm-4 mb-4">
+                        <ul>
+                            <li>
+                                <h3 class=" footer-header">Company</h3>
+                            </li>
+                            <li><a href="#" class="hover-col"> About US</a></li>
+                            <li><a href="#" class="hover-col"> Blogs</a></li>
+                            <li><a href="#" class="hover-col">Careers</a></li>
+                            <li><a href="#" class="hover-col">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-wrapper col-lg-2 col-md-4 col-6 mb-sm-4 mb-4">
+                        <ul>
+                            <li>
+                                <h3 class=" footer-header">Product</h3>
+                            </li>
+                            <li><a href="#" class="hover-col"> Pricing</a></li>
+                            <li><a href="#" class="hover-col">Features</a></li>
+                            <li><a href="#" class="hover-col">Customers</a></li>
+                            <li><a href="#" class="hover-col">Demos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-wrapper col-lg-2 col-md-4 col-6 mb-sm-4 mb-4">
+                        <ul>
+                            <li>
+                                <h3 class=" footer-header">Helps</h3>
+                            </li>
+                            <li><a href="#" class="hover-col"> Introduction</a></li>
+                            <li><a href="#" class="hover-col">Feedback</a></li>
+                            <li><a href="#" class="hover-col">Referrals</a></li>
+                            <li><a href="#" class="hover-col">Network Status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-wrapper col-lg-2 col-md-4 col-6 mb-sm-4 mb-4">
+                        <ul>
+                            <li>
+                                <h3 class=" footer-header">Social Netowrk</h3>
+                            </li>
+                            <li><a href="#" class="hover-col"> Facebook</a></li>
+                            <li><a href="#" class="hover-col">Twitter</a></li>
+                            <li><a href="#" class="hover-col">Linkedin</a></li>
+                            <li><a href="#" class="hover-col">Google +</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="tag-sections d-flex col-xl-7 col-lg-10 col-md-11 ms-auto me-auto">
+                        <div class="tag-title pe-2 d-flex">
+                            <span class="pe-1">TAGS</span>
+                            <span>:</span>
+                        </div>
+                        <div class="tag-list">
+                            <ul class="d-flex flex-wrap">
+                                <li><a class="hover-col" href="#">Minimal eCommerce /</a></li>
+                                <li><a class="hover-col" href="#">Marketing /</a></li>
+                                <li><a class="hover-col" href="#">User Exprience /</a></li>
+                                <li><a class="hover-col" href="#">Ali Express /</a></li>
+                                <li><a class="hover-col" href="#">Web /</a></li>
+                                <li><a class="hover-col" href="#">Digital Expo /</a></li>
+                                <li><a class="hover-col" href="#">Web Search /</a></li>
+                                <li><a class="hover-col" href="#">Affiliate /</a></li>
+                                <li><a class="hover-col" href="#">UCWeb /</a></li>
+                                <li><a class="hover-col" href="#">Support /</a></li>
+                                <li><a class="hover-col" href="#">Theme /</a></li>
+                                <li><a class="hover-col" href="#">Best Queality /</a></li>
+                                <li><a class="hover-col" href="#">Mobile /</a></li>
+                                <li><a class="hover-col" href="#">24 Support /</a></li>
+                                <li><a class="hover-col" href="#">Ali Express /</a></li>
+                                <li><a class="hover-col" href="#">Web /</a></li>
+                                <li><a class="hover-col" href="#">Laptop /</a></li>
+                                <li><a class="hover-col" href="#">Web Search /</a></li>
+                                <li><a class="hover-col" href="#">Affiliate /</a></li>
+                                <li><a class="hover-col" href="#">Photoshop /</a></li>
+                                <li><a class="hover-col" href="#">Support /</a></li>
+                                <li><a class="hover-col" href="#">Theme. </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright d-flex justify-content-center align-items-center">
+                    <p class="af">Copyright © <a href="#" class="hover-col af">Daxone</a>. All Right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+    <script>
+        let burgerIcon = document.getElementById("burger-menu-icon");
+        let burgerMenu = document.getElementById("burger-menu");
+        let closeIcon = document.getElementById("burger-menu-close");
+        let bodyOverlay = document.getElementById("body-overlay");
+        let burgerDropdown = document.getElementById("burger-dropdown");
+        let listItem = document.querySelectorAll("#burger-list-item");
+
+        burgerIcon.addEventListener("click", openBurger);
+        closeIcon.addEventListener("click", closeBurger);
+
+        function openBurger() {
+            burgerMenu.classList.add("burgerActive");
+            bodyOverlay.classList.add("overlayActive");
+        }
+        function closeBurger() {
+            burgerMenu.classList.remove("burgerActive");
+            bodyOverlay.classList.remove("overlayActive");
+        }
+
+    </script>
+    <script src="assets/js/count.js"></script>
 </body>
 
 </html>

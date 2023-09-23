@@ -2,6 +2,9 @@
     padding-top: 85px;
     padding-bottom: 90px;
 
+    .table-list{
+        overflow-x: scroll;
+    }
     h3 {
         font-size: 20px;
         font-weight: bold;
@@ -64,11 +67,18 @@
                 font-size: 14px;
                 height: 40px;
                 margin: 0;
-                width: 110px;
+                width: 70px;
                 background: transparent none repeat scroll 0 0;
                 border: 1px solid #e1e1e1;
                 padding: 0;
                 text-align: center;
+            }
+
+            .count-down,.count-up{
+                cursor: pointer;
+                border: 1px solid #e1e1e1;
+                height: 40px;
+                width: 20px;
             }
 
             .cart-button {

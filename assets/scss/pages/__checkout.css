@@ -1,73 +1,87 @@
 .checkout-page .checkout-accordion1 {
   overflow: hidden;
 }
+
 .checkout-page .checkout-accordion-body {
   max-height: 0;
   transition: 2s;
 }
+
 .checkout-page i {
-  color: rgb(5, 189, 5);
+  color: #05bd05;
 }
+
 .checkout-page p {
   font-size: 14px;
 }
+
 .checkout-page p span {
   cursor: pointer;
-  transition: 0.3s;
+  transition: .3s;
 }
+
 .checkout-page p span:hover {
   color: #FF6541;
 }
+
 .checkout-page h5 {
   font-size: 16px;
 }
+
 .checkout-page .checkout-login button {
   background-color: #EEEFF2;
   border: none;
   border-radius: 0;
   color: black;
   padding: 10px 25px;
-  transition: 0.3s;
+  transition: .3s;
 }
+
 .checkout-page .checkout-login button:hover {
   background-color: #FF6541;
   color: white;
 }
+
 .checkout-page .checkout-accordion1-title {
   background-color: #EEEFF2;
   padding: 20px;
 }
+
 .checkout-page .checkout-social-buttons div {
   font-size: 14px;
   font-weight: 500;
   background-color: #EEEFF2;
   padding: 20px 100px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: .3s;
 }
+
 .checkout-page .checkout-social-buttons div:hover {
   background-color: #FF6541;
   color: white;
 }
+
 .checkout-page .checkout-accordion-coupon input {
   border-radius: 0;
   padding: 10px;
 }
+
 .checkout-page .checkout-accordion-coupon button {
   background-color: black;
   padding: 10px 20px;
   border-radius: 0;
   color: white;
   font-size: 14px;
-  transition: 0.3s;
+  transition: .3s;
 }
+
 .checkout-page .checkout-accordion-coupon button:hover {
   background-color: #FF6541;
   color: white;
 }
 
 .accordionNotActive {
-  max-height: 1000px !important;
+  max-height: 350px !important;
 }
 
 .checkout-form .checkout-form-line {
@@ -76,31 +90,40 @@
   height: 2px;
   border: #FF6541;
 }
+
 .checkout-form .checkout-form-input input {
   padding: 10px;
   border: 1px solid #e8e8e8;
+  outline: none;
 }
+
 .checkout-form .checkout-form-input input:focus {
   border-color: red;
 }
+
 .checkout-form .checkout-form-input select {
   padding: 10px;
   border: 1px solid #e8e8e8;
+  outline: none;
 }
+
 .checkout-form .checkout-form-input #textarea {
   border: none;
   background-color: #E8EFF7;
 }
+
 .checkout-form .order-checkout {
   border: 1px solid black;
   padding: 40px;
 }
+
 .checkout-form .order-checkout .order-line {
   background-color: #FF6541;
   width: 50px;
   height: 2px;
   border: #FF6541;
 }
+
 .checkout-form .order-checkout .product-total {
   width: 100%;
   display: flex;
@@ -108,18 +131,22 @@
   border-bottom: 1px solid #E8EFF7;
   padding: 15px 0;
 }
+
 .checkout-form .order-checkout .product-name {
   border-bottom: 1px solid #E8EFF7;
   padding: 15px 0;
 }
+
 .checkout-form .order-checkout .product-name .product-price {
   display: flex;
   justify-content: space-between;
 }
+
 .checkout-form .order-checkout .checkout-radio p {
   font-size: 14px;
   font-weight: bold;
 }
+
 .checkout-form .order-checkout button {
   width: 100%;
   background-color: #FF5151;
@@ -128,9 +155,10 @@
   font-size: 14px;
   color: white;
   font-weight: bold;
-  transition: 0.3s;
+  transition: .3s;
 }
+
 .checkout-form .order-checkout button:hover {
   background-color: black;
   color: white;
-}/*# sourceMappingURL=checkout.css.map */
+}
