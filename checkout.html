@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/scss/main.css">
+</head>
+
+<body>
+    <div class="main-body-overlay">
+        <div class="body-overlay" id="body-overlay"></div>
+    </div>
+    <!-- Header Area -->
+    <header class="header">
+        <nav class="nav second">
+            <div class="inner-container custom-container container d-flex justify-content-between align-items-center">
+                <div class="nav-logo">
+                    <img src="assets\images\logo-1.webp" alt="">
+                </div>
+                <div class="nav-menu d-none d-sm-none d-md-none d-lg-block ">
+                    <ul class="nav-menu-list d-flex justify-content-between align-items-center gap-5 m-0">
+                        <li class="nav-menu-list-item"><a class="bold" href="index.html">Home</a>
+                            <ul class="home-dropdown fs-6">
+                                <li class="home-dropdown-list-item py-1"><a href="#">Home Version 1</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Home Version 2</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Home Version 3</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Home Version 4</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Home Version 5</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Home Version 6</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Home Version 7</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Home Version 8</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Home Version 9</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Home Version 10</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu-list-item "><a class="bold" href="shop.html">Shop</a>
+                            <ul class="home-dropdown d-flex justify-content-between gap-4 fs-6"
+                                style="left: -200px; width: 60vw;">
+                                <div class="home-dropdown-list-item-shop  w-25">
+                                    Shop Layout
+                                    <hr>
+                                    <li class="home-dropdown-list-item py-1"><a href="shop.html">Standard Style</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Standard Style 2</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Shop 2 Column</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Shop No Sidebar</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Shop Fullwide</a></li>
+                                </div>
+                                <div class="home-dropdown-list-item-shop w-25">
+                                    Shop Layout
+                                    <hr>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Fullwide No Sidebar</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">List Style</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">List 2 Column</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">List No Sidebar</a></li>
+                                </div>
+                                <div class="home-dropdown-list-item-shop  w-25">
+                                    Product Details
+                                    <hr>
+                                    <li class="home-dropdown-list-item py-1"><a href="shop.html">Standard Style</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Standard Style 2</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Tab Style 1</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Tab Style 2</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Tab Style 3</a></li>
+                                </div>
+                                <div class="home-dropdown-list-item-shop  w-25">
+                                    Product Details
+                                    <hr>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Gallery Style</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Sticky Style</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Slider Style</a></li>
+                                    <li class="home-dropdown-list-item py-1"><a href="#">Affiliate Style</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="nav-menu-list-item"><a class="bold" href="">Men</a></li>
+                        <li class="nav-menu-list-item"><a class="bold" href="">Pages</a>
+                            <ul class="home-dropdown fs-6">
+                                <li class="home-dropdown-list-item py-1"><a href="#">About Us</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Cart Page</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="checkout.html">Checkout</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="wishlist.html">Wishlist</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">My Account</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="contact.html">Contact Us</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="login.html">Login/Register</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu-list-item"><a class="bold" href="">Blog</a>
+                            <ul class="home-dropdown fs-6">
+                                <li class="home-dropdown-list-item py-1"><a href="#">Standard Style</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Blog 2 Column</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Blog Sidebar</a></li>
+                                <li class="home-dropdown-list-item py-1"><a href="#">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu-list-item"><a class="bold" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-basket d-flex align-items-center gap-xl-5 gap-3">
+                    <a class="sec-icons" href="wishlist.html"><i class="fa-regular fa-heart d-sm-block d-none"></i></a>
+                    <a class="sec-icons" href="login.html"><i class="fa-regular fa-user d-sm-block d-none"></i></a>
+                    <a class="sec-icons fs-4 d-none d-sm-none d-md-none d-lg-flex align-items-center gap-1" href="checkout.html"><span class="d-sm-block d-none">$240</span><i class="fa-solid fa-cart-shopping"></i></a>
+                    <i id="burger-menu-icon" class="fa-solid fa-burger d-block d-sm-block d-md-block d-lg-none fs-4"
+                        style="color: #FF6541;;"></i>
+                    <div id="burger-menu" class="burger-menu">
+                        <div id="burger-menu-close" class="burger-menu-close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="burger-menu-input d-flex align-items-center">
+                            <input class="fs-8" type="form form-control" placeholder="Search entire store...">
+                            <i class="fa-solid fa-magnifying-glass fs-6"></i>
+                        </div>
+                        <hr class="mt-5">
+                        <div class="burger-menu-list-menu-container">
+                            <ul class="burger-menu-list-menu d-flex flex-column gap-3">
+                                <li class="burger-menu-list-menu-item" id="burger-menu-list-menu-item">
+                                    <div id="burger-list-item"
+                                        class="burger-list-item w-100 d-flex justify-content-between align-items-center">
+                                        <a href="#">Home</a><span id="plus"><i class="fa-solid fa-plus fs-6"></i></span>
+                                        <span class="plusMinusActive" id="minus"><i
+                                                class="fa-solid fa-minus"></i></span>
+                                    </div>
+                                    <div class="burger-dropdown " id="burger-dropdown">
+                                        <ul class="burger-dropdown-menu d-flex flex-column gap-2 p-4">
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="burger-menu-list-menu-item ">
+                                    <div id="burger-list-item"
+                                        class="burger-list-item w-100 d-flex justify-content-between align-items-center">
+                                        <a href="#">Shop</a><span id="plus"><i class="fa-solid fa-plus fs-6"></i></span>
+                                        <span class="plusMinusActive" id="minus"><i
+                                                class="fa-solid fa-minus"></i></span>
+                                    </div>
+                                    <div class="burger-dropdown">
+                                        <ul class="burger-dropdown-menu d-flex flex-column gap-2 p-4">
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="burger-menu-list-menu-item ">
+                                    <div id="burger-list-item"
+                                        class="burger-list-item w-100 d-flex justify-content-between align-items-center">
+                                        <a href="#">Pages</a><span id="plus"><i
+                                                class="fa-solid fa-plus fs-6"></i></span> <span class="plusMinusActive"
+                                            id="minus"><i class="fa-solid fa-minus"></i></span>
+                                    </div>
+                                    <div class="burger-dropdown">
+                                        <ul class="burger-dropdown-menu d-flex flex-column gap-2 p-4">
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="burger-menu-list-menu-item ">
+                                    <div id="burger-list-item"
+                                        class="burger-list-item w-100 d-flex justify-content-between align-items-center">
+                                        <a href="#">Blog</a><span id="plus"><i class="fa-solid fa-plus fs-6"></i></span>
+                                        <span class="plusMinusActive" id="minus"><i
+                                                class="fa-solid fa-minus"></i></span>
+                                    </div>
+                                    <div class="burger-dropdown">
+                                        <ul class="burger-dropdown-menu d-flex flex-column gap-2 p-4">
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                            <li class="burger-dropdown-menu-list">Home Version 1</li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li
+                                    class="burger-menu-list-menu-item d-flex justify-content-between align-items-center">
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="mt-5">
+
+                        <div class="burger-menu-list-footer-container">
+                            <ul class="burger-menu-list-footer d-flex flex-column gap-3">
+                                <li
+                                    class="burger-menu-list-menu-item d-flex justify-content-between align-items-center">
+                                    <a href="#">Language</a><span><i class="fa-solid fa-chevron-down"></i></span>
+                                </li>
+                                <li
+                                    class="burger-menu-list-menu-item d-flex justify-content-between align-items-center">
+                                    <a href="#">Currency</a><span><i class="fa-solid fa-chevron-down"></i></span>
+                                </li>
+                                <li
+                                    class="burger-menu-list-menu-item d-flex justify-content-between align-items-center">
+                                    <a href="#">My Account</a><span><i class="fa-solid fa-chevron-down"></i></span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Area End -->
+    <div class="container-fluid m-0 p-0">
+        <!-- Contact Background Area -->
+        <section class="bg-section">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+                <h2>Checkout Page</h2>
+                <p><a href="#">Home</a><span class="ps-2 pe-2 fw-light"><i
+                            class="fa-solid fa-slash fa-rotate-90"></i></span><span class="active">Contact Us</span></p>
+            </div>
+        </section>
+        <!-- Accordion Area -->
+        <section class="checkout-page mt-5">
+            <div class="container">
+                <div class="checkout-accordion1" id="checkout-accordion1">
+
+                    <div class="checkout-accordion1-title d-flex align-items-center gap-3">
+
+                        <i class="fa-regular fa-circle-check"></i>
+
+                        <p>Returning customer?<span id="checkout-click" class="checkout-click"> Click here to
+                                login</span></p>
+                    </div>
+
+                    <div class="checkout-accordion-body  mt-3" id="checkout-accordion-body">
+
+                        <p>If you have shopped with us before, please enter your details in the boxes below. If you are
+                            a new customer, please proceed to the Billing & Shipping section.</p>
+
+                        <div class="checkout-inputs d-flex justify-content-between align-items-center gap-4 mt-3">
+
+                            <div class="checkout-inputs-username w-50">
+                                <h5>Username Or Email Address</h5>
+                                <input class="form form-control" type="text">
+                            </div>
+                            <div class="checkout-inputs-password w-50">
+                                <h5>Password</h5>
+                                <input class="form form-control" type="text">
+                            </div>
+
+
+                        </div>
+
+                        <div class="checkout-login d-flex mt-3 gap-4">
+
+                            <button class="btn btn-danger">Login</button>
+
+                            <div class="checkout-login-checkbox d-flex align-items-center gap-2">
+
+                                <input type="checkbox">
+
+                                <p>Remember me</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="checkout-social mt-3">
+
+                            <p>Lost your password?</p>
+
+                            <p class="mt-3">Login with:</p>
+
+                            <div class="checkout-social-buttons mt-3 d-flex gap-3">
+
+                                <div class="social-button">FACEBOOK</div>
+                                <div class="social-button">TWITTER</div>
+                                <div class="social-button">GOOGLE</div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="checkout-accordion1  mt-3" id="checkout-accordion1">
+                    <div class="checkout-accordion1-title d-flex align-items-center gap-3">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>Have a coupon?<span id="checkout-click" class="checkout-click"> Click here to enter your
+                                code</span></p>
+                    </div>
+                    <div class="checkout-accordion-body mt-3" id="checkout-accordion-body">
+                        <div class="checkout-accordion-coupon d-flex align-items-center gap-2">
+                            <input class="form form-control w-50" type="text" placeholder="Coupon code">
+                            <button class="btn">APPLY COUPON</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Checkout Area -->
+        <section class="checkout-form mt-5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+
+                        <h5>BILLING DETAILS</h5>
+
+                        <div class="checkout-form-line"></div>
+
+                        <div
+                            class="checkout-form-name d-flex flex-column flex-sm-column flex-md-row flex-lg-row gap-4 mt-3">
+
+                            <div class="checkout-form-input w-100 mt-3">
+                                <p>First Name</p>
+                                <input class="w-100" type="text">
+                            </div>
+
+                            <div class="checkout-form-input w-100 mt-3">
+                                <p>Last Name</p>
+                                <input class="w-100" type="text">
+                            </div>
+                        </div>
+
+
+                        <div class="checkout-form-input mt-3">
+                            <p>Company Name</p>
+                            <input class="w-100" type="text">
+                        </div>
+
+                        <div class="checkout-form-input mt-3">
+                            <p>Country</p>
+                            <select name="" id="" class="w-100">
+                                <option value="">Select Country:</option>
+                                <option value="">Azerbaijan</option>
+                                <option value="">Turkey</option>
+                                <option value="">Georgia</option>
+                            </select>
+                        </div>
+
+                        <div class="checkout-form-input mt-3">
+                            <p>Street Address</p>
+                            <input class="w-100 " type="text" placeholder="House Number">
+                            <input class="w-100 mt-3" type="text" placeholder="Apartment">
+                        </div>
+
+                        <div class="checkout-form-input mt-3">
+                            <p>State/Country</p>
+                            <input class="w-100 " type="text">
+                        </div>
+
+                        <div class="checkout-form-input mt-3">
+                            <p>PostCode/ZipCode</p>
+                            <input class="w-100 " type="text">
+                        </div>
+
+                        <div class="checkout-form-input mt-3">
+                            <p>Phone</p>
+                            <input class="w-100 " type="text">
+                        </div>
+
+                        <div class="checkout-form-input mt-3">
+                            <p>Email Address</p>
+                            <input class="w-100 " type="text">
+                        </div>
+
+                        <div class="checkout-login-checkbox d-flex align-items-center gap-2 mt-3">
+                            <input type="checkbox">
+                            <p>Create an account</p>
+                        </div>
+
+                        <textarea style="border: none; background-color: #E8EFF7;" rows="6" name="" id="textarea"
+                            class="w-100 p-3 mt-3" placeholder="Your Notes..."></textarea>
+
+                    </div>
+
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+
+                        <div class="order-checkout p-5">
+
+
+                            <div class="order-title">
+                                <h5>Your order</h5>
+                                <div class="order-line"></div>
+                            </div>
+
+                            <div class="order-product  mt-5">
+
+                                <div class="product-total">
+
+                                    <p style="font-size: 14px; font-weight:bold;">PRODUCT</p>
+
+                                    <p style="color: #FF6541;">TOTAL</p>
+                                </div>
+
+                                <div class="product-name">
+
+
+                                    <div class="product-price mt-2">
+
+                                        <p>Product Name X 1</p>
+
+                                        <p>$329</p>
+                                    </div>
+
+
+                                    <div class="product-price mt-2">
+
+                                        <p>Product Name X 1</p>
+
+                                        <p>$329</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="product-total">
+
+                                    <p style="font-size: 14px; font-weight:bold;">SUBTOTAL</p>
+
+                                    <p style="color: #FF6541;">$329</p>
+                                </div>
+
+                                <div class="product-total">
+
+                                    <p style="font-size: 14px; font-weight:bold;">SHIPPING</p>
+
+                                    <p style="color: #FF6541;">Enter your full address</p>
+                                </div>
+
+                                <div class="product-total">
+
+                                    <p style="font-size: 14px; font-weight:bold;">TOTAL</p>
+
+                                    <p style="color: #FF6541;">$273</p>
+                                </div>
+
+                                <div class="checkout-radio d-flex align-items-center gap-2 mt-3">
+
+                                    <input type="radio">
+
+                                    <p>DIRECT BANK TRANSFER</p>
+                                </div>
+
+                                <p style="font-size: 12px;">Make your payment directly into our bank account. Please use
+                                    your Order ID as the payment reference.</p>
+
+                                <div class="checkout-payment">
+
+                                    <div class="checkout-radio d-flex align-items-center gap-2 mt-3">
+
+                                        <input type="radio">
+
+                                        <p>CHECK PAYMENTS</p>
+                                    </div>
+
+                                    <div class="checkout-radio d-flex align-items-center gap-2 mt-3">
+
+                                        <input type="radio">
+
+                                        <p>CASH ON DELIVERY</p>
+                                    </div>
+
+                                    <div class="checkout-radio d-flex align-items-center gap-2 mt-3">
+
+                                        <input type="radio">
+
+                                        <p>PAYPAL</p>
+                                        <img style="width: 40%;" src="../images/payment.webp" alt="">
+                                        <p style="font-size: 12px;"><a style="text-decoration: underline; color: black;"
+                                                href="">WHAT IS PAYPAL?</a></p>
+                                    </div>
+
+
+                                    <button class="btn btn-form mt-5 checkout-button">
+                                        PLACE ORDER
+                                    </button>
+
+
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Info Area End -->
+        <!-- Footer-->
+        <footer class="footer-area mt-5">
+            <div class="footer-container ">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="footer-wrapper col-lg-4 col-md-8 col-12 mb-md-5 mb-sm-4 mb-4">
+                            <img src="../images/logo-1.webp" />
+                            <p class="footer-about">On the other hand, we denounce with righteous
+                                indignation and dislike men who are so beguiled and demoralized by the charms
+                            <p>
+                        </div>
+                        <div class="footer-wrapper col-lg-2 col-md-4 col-6 mb-sm-4 mb-4">
+                            <ul>
+                                <li>
+                                    <h3 class=" footer-header">Company</h3>
+                                </li>
+                                <li><a href="#" class="hover-col"> About US</a></li>
+                                <li><a href="#" class="hover-col"> Blogs</a></li>
+                                <li><a href="#" class="hover-col">Careers</a></li>
+                                <li><a href="#" class="hover-col">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-wrapper col-lg-2 col-md-4 col-6 mb-sm-4 mb-4">
+                            <ul>
+                                <li>
+                                    <h3 class=" footer-header">Product</h3>
+                                </li>
+                                <li><a href="#" class="hover-col"> Pricing</a></li>
+                                <li><a href="#" class="hover-col">Features</a></li>
+                                <li><a href="#" class="hover-col">Customers</a></li>
+                                <li><a href="#" class="hover-col">Demos</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-wrapper col-lg-2 col-md-4 col-6 mb-sm-4 mb-4">
+                            <ul>
+                                <li>
+                                    <h3 class=" footer-header">Helps</h3>
+                                </li>
+                                <li><a href="#" class="hover-col"> Introduction</a></li>
+                                <li><a href="#" class="hover-col">Feedback</a></li>
+                                <li><a href="#" class="hover-col">Referrals</a></li>
+                                <li><a href="#" class="hover-col">Network Status</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-wrapper col-lg-2 col-md-4 col-6 mb-sm-4 mb-4">
+                            <ul>
+                                <li>
+                                    <h3 class=" footer-header">Social Netowrk</h3>
+                                </li>
+                                <li><a href="#" class="hover-col"> Facebook</a></li>
+                                <li><a href="#" class="hover-col">Twitter</a></li>
+                                <li><a href="#" class="hover-col">Linkedin</a></li>
+                                <li><a href="#" class="hover-col">Google +</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="tag-sections d-flex col-xl-7 col-lg-10 col-md-11 ms-auto me-auto">
+                            <div class="tag-title pe-2 d-flex">
+                                <span class="pe-1">TAGS</span>
+                                <span>:</span>
+                            </div>
+                            <div class="tag-list">
+                                <ul class="d-flex flex-wrap">
+                                    <li><a class="hover-col" href="#">Minimal eCommerce /</a></li>
+                                    <li><a class="hover-col" href="#">Marketing /</a></li>
+                                    <li><a class="hover-col" href="#">User Exprience /</a></li>
+                                    <li><a class="hover-col" href="#">Ali Express /</a></li>
+                                    <li><a class="hover-col" href="#">Web /</a></li>
+                                    <li><a class="hover-col" href="#">Digital Expo /</a></li>
+                                    <li><a class="hover-col" href="#">Web Search /</a></li>
+                                    <li><a class="hover-col" href="#">Affiliate /</a></li>
+                                    <li><a class="hover-col" href="#">UCWeb /</a></li>
+                                    <li><a class="hover-col" href="#">Support /</a></li>
+                                    <li><a class="hover-col" href="#">Theme /</a></li>
+                                    <li><a class="hover-col" href="#">Best Queality /</a></li>
+                                    <li><a class="hover-col" href="#">Mobile /</a></li>
+                                    <li><a class="hover-col" href="#">24 Support /</a></li>
+                                    <li><a class="hover-col" href="#">Ali Express /</a></li>
+                                    <li><a class="hover-col" href="#">Web /</a></li>
+                                    <li><a class="hover-col" href="#">Laptop /</a></li>
+                                    <li><a class="hover-col" href="#">Web Search /</a></li>
+                                    <li><a class="hover-col" href="#">Affiliate /</a></li>
+                                    <li><a class="hover-col" href="#">Photoshop /</a></li>
+                                    <li><a class="hover-col" href="#">Support /</a></li>
+                                    <li><a class="hover-col" href="#">Theme. </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright d-flex justify-content-center align-items-center">
+                        <p class="af">Copyright © <a href="#" class="hover-col af">Daxone</a>. All Right Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <!-- Footer end -->
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        let burgerIcon = document.getElementById("burger-menu-icon");
+        let burgerMenu = document.getElementById("burger-menu");
+        let closeIcon = document.getElementById("burger-menu-close");
+        let bodyOverlay = document.getElementById("body-overlay");
+        let burgerDropdown = document.getElementById("burger-dropdown");
+        let listItem = document.querySelectorAll("#burger-list-item");
+
+        burgerIcon.addEventListener("click", openBurger);
+        closeIcon.addEventListener("click", closeBurger);
+
+        function openBurger() {
+            burgerMenu.classList.add("burgerActive");
+            bodyOverlay.classList.add("overlayActive");
+        }
+        function closeBurger() {
+            burgerMenu.classList.remove("burgerActive");
+            bodyOverlay.classList.remove("overlayActive");
+        }
+
+    </script>
+</body>
+
+</html>

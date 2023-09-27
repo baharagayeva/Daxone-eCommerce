@@ -1,0 +1,20 @@
+@mixin custom-container($padding-x: 24px) {
+    width: 100%;
+    padding-right: $padding-x;
+    padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+
+    @media (max-width:1199px){
+        max-width: 992px;
+    }
+
+    @media (max-width:991px){
+        max-width: 768px;
+    }
+
+    @media (max-width:767px){
+        max-width: 576px;
+    }
+}
