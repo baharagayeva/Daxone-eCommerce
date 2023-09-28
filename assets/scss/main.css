@@ -384,7 +384,7 @@ footer .footer-2 p {
   background-image: url("/assets/images/hm1-bg-1.webp");
   background-size: cover;
   position: relative;
-  height: 550px;
+  height: 660px;
 }
 .slider-container .slider {
   padding-top: 20px;
@@ -795,7 +795,7 @@ footer .footer-2 p {
 .product-section .product-area .product-boxs .product-box .product-con a:hover {
   color: #FF5151;
 }
-.product-section .product-area .product-boxs .product-box .product-con .product-cost {
+.product-section .product-area .product-boxs .product-box .product-con .product-cost, .product-section .product-area .product-boxs .product-box .product-con .dollar {
   color: #373737;
   font-weight: bold;
   font-size: 16px;

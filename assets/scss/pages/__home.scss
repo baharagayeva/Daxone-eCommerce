@@ -24,7 +24,7 @@
     background-image: url("/assets/images/hm1-bg-1.webp");
     background-size: cover;
     position: relative;
-    height: 550px;
+    height: 660px;
 
     .slider {
         padding-top: 20px;
@@ -553,7 +553,7 @@
                         }
                     }
 
-                    .product-cost {
+                    .product-cost, .dollar {
                         color: #373737;
                         font-weight: bold;
                         font-size: 16px;
