@@ -2328,9 +2328,9 @@ select:disabled {
 button,
 [type=button],
 [type=reset],
-[type=submit] {
+/* [type=submit] {
   -webkit-appearance: button;
-}
+} */
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -2385,10 +2385,10 @@ legend + * {
   height: auto;
 }
 
-[type=search] {
+/* [type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
-}
+} */
 
 /* rtl:raw:
 [type="tel"],
@@ -2406,10 +2406,10 @@ legend + * {
   padding: 0;
 }
 
-::file-selector-button {
+/* ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
-}
+} */
 
 output {
   display: inline-block;
