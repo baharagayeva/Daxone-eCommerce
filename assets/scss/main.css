@@ -382,7 +382,7 @@ footer .footer-2 p {
 }
 
 .slider-container {
-  background-image: url("assets/images/hm1-bg-1.webp");
+  background-image: url("../../../assets/images/hm1-bg-1.webp");
   background-size: cover;
   position: relative;
   height: 660px;
@@ -621,7 +621,7 @@ footer .footer-2 p {
   font-family: "Poppins", sans-serif;
 }
 .banner-section .banner-area {
-  background-image: url("assets/images/banner/banner-bg-1.jpg");
+  background-image: url("../../../assets/images/banner/banner-bg-1.jpg");
   background-position: center center;
   background-size: cover;
   padding: 100px 0;
@@ -906,7 +906,7 @@ footer .footer-2 p {
 }
 
 .bg-section {
-  background-image: url(/assets/images/bg/breadcrumb.jpg);
+  background-image: url("../../../assets/images/bg/breadcrumb.jpg");
   padding: 110px 0 117px;
   background-position: 50% 90%;
 }
