@@ -95,19 +95,19 @@ footer {
 
     .footer-container {
 
-        @media(min-width:1200px){
+        @media(min-width:1200px) {
             padding: 0 65px;
         }
 
-        @media(max-width:1199px) and (min-width:992px){
+        @media(max-width:1199px) and (min-width:992px) {
             padding: 0 30px;
         }
 
-        @media(max-width:991px) and (min-width:768px){
+        @media(max-width:991px) and (min-width:768px) {
             padding: 0 45px;
         }
 
-        @media(max-width:767px){
+        @media(max-width:767px) {
             padding: 0 10px;
         }
 
@@ -123,8 +123,8 @@ footer {
                     margin: 0;
                     line-height: 25px;
                     margin: 42px 0 0;
-                    
-                    @media (min-width:1200px){
+
+                    @media (min-width:1200px) {
                         width: 56%;
                     }
                 }
@@ -148,26 +148,27 @@ footer {
             }
         }
 
-        .footer-bottom{
-    
-            .row{
+        .footer-bottom {
+
+            .row {
                 border-top: 1px solid #e5e5e5;
                 border-bottom: 1px solid #e5e5e5;
                 padding-top: 40px;
 
-                .tag-sections{
+                .tag-sections {
                     padding: 0 15px 35px;
 
-                    .tag-title{
-                        span{
+                    .tag-title {
+                        span {
                             font-weight: bold;
                         }
                     }
 
-                    .tag-list{
-                        li{
+                    .tag-list {
+                        li {
                             margin: 0 12px 5px 0;
-                            a{
+
+                            a {
                                 color: #373737;
                                 font-size: 14px;
                                 font-style: italic;
@@ -177,10 +178,10 @@ footer {
                 }
             }
 
-            .copyright{
+            .copyright {
                 padding: 20px 0;
-                
-                p{
+
+                p {
                     font-size: 14px;
                 }
             }
