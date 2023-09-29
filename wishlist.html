@@ -238,7 +238,7 @@
         <section class="bg-section">
             <div class="d-flex justify-content-center align-items-center flex-column">
                 <h2>Wishlist Page</h2>
-                <p><a href="#">Home</a><span class="ps-2 pe-2 fw-light"><i
+                <p><a href="index.html">Home</a><span class="ps-2 pe-2 fw-light"><i
                             class="fa-solid fa-slash fa-rotate-90"></i></span><span class="active">Wishlist</span></p>
             </div>
         </section>
@@ -246,11 +246,19 @@
         <!-- Main Cart Area -->
         <section class="main-cart-area">
             <div class="custom-container">
-                <div class=" d-flex flex-column justify-content-center align-items-center">
+                <div class="cart-main-area empty-cart d-none col-12">
+                    <div class="custom-container row">
+                        <div class="cart-main-inner col-12">
+                            <p>Your wishlist is currently empty.</p>
+                            <a href="shop.html">Return To Shop</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="non-empty-cart d-none d-flex flex-column justify-content-center align-items-center col-12">
                     <h3 style="text-align: left;">Your cart items</h3>
                     <div class="row">
                         <div class="col-12 table-list">
-                            <table >
+                            <table>
                                 <thead>
                                     <tr>
                                         <th>IMAGE</th>
@@ -336,6 +344,15 @@
                                     </tr> -->
                                 </tbody>
                             </table>
+                        </div>
+                        <div class="pages-change col-12 col-lg-4">
+                            <!-- <p class="cart-text">Cart Total</p>
+                            <div class="last-price">
+                                <p class="text">Total</p>
+                                <p class="price"></p>
+                            </div> -->
+                            <a href="checkout.html" class="proceed">Proceed To Checkout</a>
+                            <a href="shop.html" class="return">Continue Shopping</a>
                         </div>
                     </div>
                 </div>
@@ -442,7 +459,7 @@
         </div>
     </footer>
     <!-- Footer end -->
-    
+
     <script>
         let burgerIcon = document.getElementById("burger-menu-icon");
         let burgerMenu = document.getElementById("burger-menu");

@@ -952,6 +952,9 @@ footer .footer-2 p {
   color: #333333;
   z-index: 1;
 }
+.shop-main-section .shop-product-topbar .topbar-info p {
+  margin-bottom: 0;
+}
 @media (max-width: 768px) {
   .shop-main-section .shop-product-topbar .product-sorting-part {
     margin-top: 15px;
@@ -1575,7 +1578,27 @@ footer .footer-2 p {
   padding-top: 85px;
   padding-bottom: 90px;
 }
-.main-cart-area .table-list {
+.main-cart-area .empty-cart {
+  text-align: center;
+}
+.main-cart-area .empty-cart p {
+  font-size: 36px;
+  color: #373737;
+  margin-bottom: 40px;
+}
+.main-cart-area .empty-cart a {
+  border: 1px solid #ff5151;
+  padding: 15px 20px;
+  color: #000;
+  font-weight: bold;
+  background: linear-gradient(#ff5151 0 0) var(--p, 0)/var(--p, 0) no-repeat;
+  transition: 0.4s, background-position 0s !important;
+}
+.main-cart-area .empty-cart a:hover {
+  --p: 100% !important;
+  color: #fff !important;
+}
+.main-cart-area .non-empty-cart {
   overflow-x: scroll;
 }
 .main-cart-area h3, .main-cart-area .h3 {
@@ -1628,7 +1651,8 @@ footer .footer-2 p {
   padding: 0;
   text-align: center;
 }
-.main-cart-area tbody tr .count-down, .main-cart-area tbody tr .count-up {
+.main-cart-area tbody tr .count-down,
+.main-cart-area tbody tr .count-up {
   cursor: pointer;
   border: 1px solid #e1e1e1;
   height: 40px;
@@ -1645,6 +1669,17 @@ footer .footer-2 p {
 }
 .main-cart-area tbody tr .cart-button button:hover {
   background-color: #111;
+}
+.main-cart-area .pages-change {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.main-cart-area .pages-change a {
+  color: #373737;
+}
+.main-cart-area .pages-change a:hover {
+  color: #ff5151;
 }
 
 .login-register-area {
