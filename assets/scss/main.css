@@ -8,11 +8,11 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("assets/fonts/Roboto");
+  src: url("../../../assets/fonts/Roboto");
 }
 @font-face {
   font-family: "Poppins";
-  src: url("assets/fonts/Poppins");
+  src: url("../../../assets/fonts/Poppins");
 }
 ol, ul, li {
   list-style: none;
