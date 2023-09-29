@@ -60,6 +60,7 @@ function createProductList() {
         name.textContent = item.name;
 
         let price = document.createElement('span');
+        price.className = 'pro-price';
         price.textContent = item.price;
 
         tdCounter.innerHTML = `<div class="product-count d-flex align-items-center">
@@ -71,7 +72,9 @@ function createProductList() {
         </div>
         `;
 
+
         let subTotal = document.createElement('span');
+        subTotal.className = 'product-subTotal';
 
         let deleteBtn = document.createElement('button');
         deleteBtn.textContent = "DELETE";
@@ -108,14 +111,6 @@ function counter() {
             let input = item.querySelector('input');
             let curValue = parseInt(input.value);
             input.value = ++curValue;
-
-            productArray.forEach(item =>{
-                if(item.name === countWillBeChanged.textContent){
-                    item.count++;
-                }
-            })
-            localStorage.setItem('products', JSON.stringify(productArray));
-
         }
 
         const decrease = (event) => {
@@ -137,8 +132,17 @@ function counter() {
 
 }
 
-function subTotalPrice(){
-
+function containers() {
+    const nonEmpty = document.querySelector('.non-empty-cart');
+    const empty = document.querySelector('.empty-cart');
+    if (productArray.length > 0) {
+        nonEmpty.classList.remove('d-none');
+        empty.classList.add('d-none');
+    }
+    else {
+        nonEmpty.classList.add('d-none');
+        empty.classList.remove('d-none');
+    }
 }
 
 const deleteProductFromCart = (e) => {
@@ -157,6 +161,7 @@ const pageLoad = () => {
     else {
         createProductList();
         counter();
+        containers()
     }
 }
 

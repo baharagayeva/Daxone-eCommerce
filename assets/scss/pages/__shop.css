@@ -57,6 +57,10 @@
   z-index: 1;
 }
 
+.shop-main-section .shop-product-topbar .topbar-info p {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .shop-main-section .shop-product-topbar .product-sorting-part {
     margin-top: 15px;
