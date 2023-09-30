@@ -210,6 +210,11 @@ footer .footer-1 {
 footer .footer-1 .icon-paragraph {
   margin: 21px 0 23px;
 }
+@media (max-width: 567px) {
+  footer .footer-1 ul {
+    padding-left: 0;
+  }
+}
 footer .footer-1 ul li {
   line-height: 35px;
 }
@@ -906,7 +911,7 @@ footer .footer-2 p {
 }
 
 .bg-section {
-  background-image: url("../../../assets/images/bg/breadcrumb.jpg");
+  background-image: url("../../assets/images/bg/breadcrumb.jpg");
   padding: 110px 0 117px;
   background-position: 50% 90%;
 }
