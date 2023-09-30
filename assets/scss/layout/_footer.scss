@@ -19,6 +19,9 @@ footer {
         }
 
         ul {
+            @media (max-width:567px){
+                padding-left: 0;
+            }
             li {
                 line-height: 35px;
             }
