@@ -21,7 +21,7 @@
 
 // slider page  
 .slider-container {
-    background-image: url("../../images/hm1-bg-1.webp");
+    background-image: url("../../assets/images/hm1-bg-1.webp");
     background-size: cover;
     position: relative;
     height: 660px;
@@ -554,7 +554,8 @@
                         }
                     }
 
-                    .product-cost, .dollar {
+                    .product-cost,
+                    .dollar {
                         color: #373737;
                         font-weight: bold;
                         font-size: 16px;
