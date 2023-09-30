@@ -113,7 +113,8 @@
 }
 
 .main-cart-area .pages-change {
-  padding-top: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-around;
 }

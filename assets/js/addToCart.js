@@ -74,7 +74,8 @@ function createProductList() {
 
 
         let subTotal = document.createElement('span');
-        subTotal.className = 'product-subTotal';
+        subTotal.className = 'pro-price';
+        subTotal.textContent = item.price;
 
         let deleteBtn = document.createElement('button');
         deleteBtn.textContent = "DELETE";

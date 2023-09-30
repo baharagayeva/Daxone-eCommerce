@@ -381,7 +381,7 @@ footer .footer-2 p {
 }
 
 .slider-container {
-  background-image: url("../../../assets/images/hm1-bg-1.webp");
+  background-image: url("../../images/hm1-bg-1.webp");
   background-size: cover;
   position: relative;
   height: 660px;
@@ -1671,7 +1671,8 @@ footer .footer-2 p {
   background-color: #111;
 }
 .main-cart-area .pages-change {
-  padding-top: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-around;
 }
